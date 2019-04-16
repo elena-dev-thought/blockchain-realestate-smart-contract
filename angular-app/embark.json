@@ -1,0 +1,20 @@
+{
+  "contracts": ["contracts/**"],
+  "buildDir": "dist/",
+  "config": "config/",
+  "versions": {
+    "web3": "1.0.0-beta",
+    "solc": "0.5.0",
+    "ipfs-api": "17.2.4"
+  },
+  "plugins": {
+    "embarkjs-connector-web3": {}
+  },
+  "options": {
+    "solc": {
+      "optimize": true,
+      "optimize-runs": 200
+    }
+  },
+  "generationDir": "src/embarkArtifacts"
+}
